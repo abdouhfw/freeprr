@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    background: radial-gradient(#f9d349 , 20% , #d57e12);
+    display: flex;
+}
+
+.main-width{
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.bb{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.bb header .logo h2 a{
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    display: block;
+    font-size: 50px;
+    color: white;
+}
+
+.bb header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 30px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+
+nav ul li:not(:last-child) a:hover,
+nav ul li:not(:last-child) a:focus{
+    border-bottom: 2px solid white;
+}
+
+nav ul li.active a{
+    border-bottom: 2px solid white;
+    font-family: 'Kanit', sans-serif;
+}
+
+nav ul li.btn a{
+    border: 2px solid white;
+    background: transparent;
+    padding: 9px 20px;
+    border-radius: 20px;
+}
+
+nav ul li.btn a:hover{
+    background-color: white;
+    color: #d57e12;
+}
+
+.content .text{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 30px  0 0;
+    align-items: right;
+    text-align: left;
+}
+
+.content .text h5{
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+.content .text h1{
+    font-size: 60px;
+    color: #fbff00;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.content .text p{
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.content .text a{
+    font-family: 'Cairo', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 9px 20px;
+    line-height: 1.4;
+    border-radius: 20px;
+}
+
+.content .text a.princ{
+    background-color: white;
+    color: #d57e12;
+}
+
+.content .text a:hover{
+    background-color: white;
+    color: #d57e12;
+}
+
+
+
+.content .mark a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.mark a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+    font-size: 30px;
+    text-align: center;
+    margin-right: 25px;
+    padding: 100px 0 0;
+}
+
+.mark a:hover{
+    transform: scale(1.2);
+    transition: .4s;
+    color: white;
+}
+
+.babay{
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+}
+
+.babay img{
+    height: 100%;
+}
+
+
+h5{
+    color: yellow;
+}
+
+
+
+ /* Styling for the laptop */
+ #laptop {
+    width: 200px;
+    height: 150px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    position: relative;
+    animation: spin 4s linear infinite;
+  }
+  
+  /* Styling for the text */
+  #text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+  }
+  
+  /* Keyframes for the spinning animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
